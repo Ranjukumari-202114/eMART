@@ -1,0 +1,44 @@
+.OrderStatus{
+   padding-top: 130px;
+   width: 100%;
+}
+.order_state{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #0984E3;
+}
+
+.OrderStatus_top{
+     display: flex;
+     flex-direction: row;
+     padding:20px 70px 0px 70px;
+     justify-content: space-between;
+}
+.OrderStatus_state{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+}
+.OrderStatus_state.active{
+    color:#0984E3 ;    
+}
+.order_status{
+    color: black;
+}
+
+.OrderStatus_main{
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+ }
+.OrderStatus_main_left{
+    width: 50%;
+    border: 2px solid green;
+}
+.OrderStatus_main_rigth{
+    width: 50%;
+    border: 2px solid red
+}

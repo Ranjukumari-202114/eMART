@@ -1,0 +1,27 @@
+.ContactUs{
+    background-image: url('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/banner-06.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+}
+.about_contact{
+    font-size: 65px;
+    font-weight: 700;
+    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 20px;
+    filter: brightness(1);
+}

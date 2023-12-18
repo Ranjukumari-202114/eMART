@@ -1,0 +1,8 @@
+.Rating{
+    display: flex;
+    flex-direction: row;
+}
+.star{
+    font-size: 20px;
+    color: rgb(243, 183, 104);
+}

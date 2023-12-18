@@ -1,0 +1,33 @@
+.ShippingDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /* border-bottom: 1px solid gray; */
+    /* border: 2px solid blueviolet; */
+    /* position: fixed; */
+
+}
+.button_line{
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}
+
+.shipping_Add{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.ShippingDetail_button button{
+    width: 25%;
+    height: 35px;
+    border: none;
+    background-color: #0984E3;
+    color: #ffff;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}

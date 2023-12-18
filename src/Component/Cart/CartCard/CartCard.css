@@ -1,0 +1,123 @@
+.Total_cart_section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 100px 0px 0px 100px;
+}
+.cart_part{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    
+    /* border: 2px solid rgb(24, 26, 24); */
+}
+.CartCard{
+  
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid rgb(24, 26, 24); */
+  gap: 30px;
+  /* justify-content: center; */
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+.img_dec{
+    height: 200px;
+    width: 250px; 
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.Price{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.discounted_price{
+    text-decoration: line-through;
+    color: gray;
+}
+.discounted_rate{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(0,132,214);
+} 
+.Quantity{
+    font-size: 16px;
+    font-weight: 700;
+}
+.Total{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* .img_pro_dec{
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+} */
+.CartCard_down{
+    /* width: 100%; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.counting{
+    /* height: 200px;
+    width: 300px; */
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid green; */
+    
+}
+.counting_btn{
+  /* height: 63px; */
+  /* width: 100px;  */
+  /* border: 2px solid black;  */
+  font-size: 35px; 
+  background-color: #FFFFFF;
+  border: none;
+  color:#0663ab ;
+  
+}
+.quantity{
+    /* height: 30px; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    width: 70px;
+    justify-content: center;
+    text-align: center;
+    /* color: black; */
+    /* border: 2px solid red; */
+}
+
+
+.remove_btn button {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #0984E3;
+    color: #FFFFFF;
+    justify-content: center;
+    border: none;
+    opacity: 20;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+

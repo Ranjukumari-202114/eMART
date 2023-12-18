@@ -1,0 +1,84 @@
+
+.ProductReviews_main{
+   padding: 120px;
+}
+.ProductReviews{
+    /* border:  2px solid green; */
+    padding: 20px;
+    margin-top: 30px;
+}
+.ProductReviews_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.ProductReviews_content1{
+    font-size: 25px;
+    font-weight: 400px;
+
+}
+.ProductReviews_content2{
+    font-size: 17px;
+}
+.ProductReviews_content3{
+    font-size: 20px;
+}
+.text_area {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.text_area label{
+    font-size: 20px;
+    
+}
+.text_area textarea{
+    height: 80px;
+    width: 100%;
+    border: none; 
+}
+.form_name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form_name input{
+   
+  width: 200px; 
+  height: 50px;
+  border: none;  
+}
+.form_email input{
+    width: 628px; 
+    height: 50px;
+    border: none;   
+}
+.form_email{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form_area{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+}
+.form_btn button{
+    margin-top: 20px;
+    height: 50px;
+    width: 130px;
+    background-color: #0084d6;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    color: #F5F7F9;
+
+}
+.form_btn button:hover{
+    background-color: #2a89e9; 
+    /* color:black ; */
+}

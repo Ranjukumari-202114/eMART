@@ -1,0 +1,123 @@
+.Navbar{
+    background-color: #14639098;
+    color: #F5F7F9;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    /* margin: 0px 30px; */
+    position:absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+    
+}
+.logo{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    /* border: 2px solid   rgb(220, 65, 65);   */
+    width: 15%;
+
+}
+.logo img{
+    /* color: #F5F7F9; */
+    /* border: 2px solid gray; */
+    padding-left: 50px;
+    height: 50px;
+    width: 180px;
+}
+.Menu{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* color: #F5F7F9; */
+    
+}
+
+.Menu ul {
+    /* color: #F5F7F9; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: none; */
+    font-family: lato sans-serif;
+    
+    gap: 20px;
+    /* text-decoration: none; */
+   
+    /* border: 2px solid red; */
+}
+.Menu ul li{
+    display: flex;
+    flex-direction: row; 
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none; 
+
+}
+.search_section{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.search_section input{
+   height: 40px;
+   width: 350px;
+   font-size: 20px;
+   border: none; 
+}
+.Navbar_right{
+    
+    font-family: lato sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+    /* border: 2px solid blue; */
+}
+.Navbar_right ul{
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    align-items: center;
+    font-family: lato sans-serif;
+    gap: 20px;
+}
+.Navbar_right ul li{
+    display: flex;
+    flex-direction: row; 
+    /* font-size: 18px; */
+    /* font-weight: 700; */
+    text-decoration: none; 
+}
+
+.Navbar_cart{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.cart {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    
+    /* display: flex;
+    flex-direction: row; */
+}
+.Navbar_cart button{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

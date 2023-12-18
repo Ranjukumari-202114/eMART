@@ -1,0 +1,22 @@
+.S4Card{
+    /* border: 2px solid red; */
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.S4Card_img img{
+    height: 60px;
+    width: 60px;
+}
+.S4Card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.S4Card_content p{
+    font-size: 18px;
+}

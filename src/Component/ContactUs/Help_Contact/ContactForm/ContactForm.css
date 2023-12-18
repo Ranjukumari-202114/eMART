@@ -1,0 +1,68 @@
+.ContactForm{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.ContactForm_left{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 80px;
+    /* height: 40vh; */
+    /* border: 2px solid black; */
+}
+.ContactForm_left1{
+  font-size: 17px;
+  font-weight: 700;
+}
+.ContactForm_left2{
+    font-size: 45px;
+    font-weight: 600;
+    /* font-family: Lato sans-serif; */
+}
+.ContactForm_left3{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.ContactForm_right{
+    width: 50%;
+    height: fit-content;
+    /* height: 40vh; */
+    /* border: 2px solid green; */
+    background-color: #ffffff;
+}
+.ContactForm_right form{
+    display: flex;
+    flex-direction: column;
+    /* gap:px; */
+    padding: 44px;
+}
+.ContactForm_right input{
+    height: 40px;
+    width: 95%;
+    font-size: 17px;
+    padding-left: 15px;
+}
+.ContactForm_right textarea{
+    height: 200px;
+    width: 95%;
+    font-size: 20px;
+    padding-left: 15px ;
+
+
+}
+
+.contact_btn{
+    height: 45px;
+    width: 180px;
+    font-size: 15px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: rgb(0,132,214);
+}

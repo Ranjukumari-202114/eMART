@@ -1,0 +1,134 @@
+.SideBar{
+    padding-top: 100px;
+    background-color:rgb(245,247,249);
+    display: flex;
+    flex-direction: row;
+}
+
+.sideBar_left{
+    padding: 50px;
+    /* border: 2px solid green; */
+    /* height: 500px; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-color: #e2e2e2; */
+}
+
+.sideBar_left input{
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    border:none
+}
+
+.filter_search{
+  font-size: 25px; 
+  font-weight: 500; 
+}
+/* .filter_input input{
+   height: 20px;
+   width: 300px;
+} */
+
+.filter_button{
+    height: 40px;
+    width: 100px;
+    background-color: #0084d6;
+    border-color: #0084d6;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.category_heading{
+    font-size: 25px;
+    font-weight: 500;
+}
+.category_content{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.category_content  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.category_content ul li{
+    display: flex;
+    flex-direction: row; 
+    font-size: 18px;
+    text-decoration: none; 
+}
+
+.category_content_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.best_sellers{
+    font-size: 25px;
+    font-weight: 500;
+}
+.category_content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.category_content1 img{
+    height: 100px;
+    width: 120px;
+}
+.category_content_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sideBar_right{
+    padding: 50px 50px 0px 0px;
+    width: 70%;
+    /* border: 2px solid green; */
+}
+.sideBar_right_list{
+    padding: 70px ;
+    background-color: white;
+}
+.sideBar_right_list p{
+    font-size: 40px;
+}
+
+.SideBarCard_info{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.SideBarCard_info .side_info{
+    font-size: 15px;
+}
+.sidebar_Card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.sidebar_Card{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    perspective: 800px;
+}

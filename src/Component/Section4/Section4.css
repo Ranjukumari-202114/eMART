@@ -1,0 +1,74 @@
+.Section4_main{
+    background-color: #F5F7F9;
+    padding-top: 20px;
+}
+.Section4{
+
+  
+    padding: 50px 80px;
+    width: 100%;
+    box-sizing: border-box; 
+    /* height: 100vh;  */
+    
+}
+
+
+.Section4_top_content{
+    background-image: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/banner-03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* filter: brightness(1); */
+    color: #F5F7F9;
+    
+    height: 500px;
+
+}
+.Section4_top_content_container{
+    gap: 20px;
+    height: 100%;
+    display: flex;
+    padding-left: 80px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(70,131,172,0.3);
+
+}
+.Section4_top_content1{
+    font-size: 23px;
+    
+    font-weight: 600;
+}
+.Section4_top_content2{
+    font-size: 50px;
+    /* font-family: Lato sans-serif; */
+    font-weight: 600;
+}
+.Section4_top_content3{
+    font-size: 17px;
+    /* font-family: Lato sans-serif; */
+    font-weight: 400;
+}
+.Section4_top_content4{
+    font-size: 23px;
+    /* font-family: Lato sans-serif; */
+    font-weight: 600;
+}
+
+.Section4_top_content button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Section4_down{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px;
+  
+  gap: 40px;
+  text-align: center;
+}

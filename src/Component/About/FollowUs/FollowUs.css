@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.FollowUs{
+    background-color: rgb(245,247,249);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Follow_us {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.Follow_us1 {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: 700;
+  color: #000000 ;
+  /* font-family: Lato sans-serif; */
+}
+
+.Follow_us2 {
+  font-size: 24px;
+  font-family: 400;
+  color: #000000;
+  font-family: "Nokora", sans-serif;
+}
+
+.Follow_icon {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  width: 70%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 50px;
+
+}
+
+.whatsapp_icon {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  font-weight: 700;
+  color: #48c958;
+  gap: 5px;
+  font-family: "Inter", sans-serif;
+}
+.youtube_icon {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fe0000;
+  font-family: "Inter", sans-serif;
+  gap: 5px;
+}
+.twitter_icon{
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  gap: 5px;
+}
+
+.instagram_icon{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    font-weight: 700;
+    color:rgb(199,57,130);
+    font-family: "Inter", sans-serif;
+    gap: 5px;
+  }
+
+.linkdin_icon {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  font-weight: 700;
+  color: #0A66C2;
+  font-family: "Inter", sans-serif;
+  gap: 5px;
+}

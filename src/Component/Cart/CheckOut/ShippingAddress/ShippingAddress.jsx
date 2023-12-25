@@ -51,7 +51,7 @@ function ShippingAddress(props) {
     }
 
 
-    axios.post("http://localhost:5000/shipping/address", Shippping_address)
+    axios.post(`${process.env.REACT_APP_BASE_URL}/shipping/address`, Shippping_address)
     .then((response) => {
 
       // setshippingDetail(response.data)
@@ -65,7 +65,7 @@ function ShippingAddress(props) {
 
   useEffect(() =>{
         (async () => {
-         const response  =  await axios.get(`http://localhost:5000/shipping/${props.user_id}`)
+         const response  =  await axios.get(`${process.env.REACT_APP_BASE_URL}/shipping/${props.user_id}`)
          setshippingDetail(response.data)
         // console.log("this is the shipping address data that is receive from the server",response.data)
        })()

@@ -28,7 +28,7 @@ function ProductReviews(props) {
       
     };
 
-    axios.post("http://localhost:5000/review", ReviewerData)
+    axios.post(`${process.env.REACT_APP_BASE_URL}/review`, ReviewerData)
     .then((response) => {
       console.log(response.data)
       
@@ -45,7 +45,7 @@ function ProductReviews(props) {
 
   useEffect(() =>{
     (async () => {
-     const response  =  await axios.get(`http://localhost:5000/review/${props.product_id}`)
+     const response  =  await axios.get(`${process.env.REACT_APP_BASE_URL}/review/${props.product_id}`)
      // console.log("Response from /product ",response.data);
     //  (response.data);
     console.log("this is the response review data",response.data)

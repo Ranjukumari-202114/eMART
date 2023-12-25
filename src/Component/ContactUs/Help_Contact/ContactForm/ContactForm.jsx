@@ -33,7 +33,7 @@ function ContactForm() {
       message:formData.message
 
      } 
-     axios.post("http://localhost:5000/contact/form", contact_detail)
+     axios.post(`${process.env.REACT_APP_BASE_URL}/contact/form`, contact_detail)
     .then((response) => {
         console.log(response.data) 
         setFormData({

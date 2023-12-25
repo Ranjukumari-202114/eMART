@@ -22,7 +22,7 @@ function Cart() {
   const handleCart = () => {
     if (data) {
       axios
-        .get(`http://localhost:5000/cart/${data._id}`)
+        .get(`${process.env.REACT_APP_BASE_URL}/cart/${data._id}`)
         .then((res) => {
           // console.log("this is the cart responce data",res.data)
           setCartData(res.data);
@@ -39,7 +39,7 @@ function Cart() {
   useEffect(() =>{
     (async () => {
       if (addressId){
-        const response  =  await axios.get(`http://localhost:5000/shipping/individual/${addressId}`)
+        const response  =  await axios.get(`${process.env.REACT_APP_BASE_URL}/shipping/individual/${addressId}`)
         setindividualShippingAddress(response.data)
        console.log("this is the individual  address data that is receive from the server",response.data)
       }

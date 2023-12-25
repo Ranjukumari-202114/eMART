@@ -15,18 +15,14 @@ function SideBar() {
   //   console.log(category)
   const [category, setCategory] = useState(params.category);
 
-  //   const handleSearch= async()=>{
-  //       const response  =  await axios.get('http://localhost:5000/product/search')
-  //       console.log(response)
-
-  //   }
+  
 
   const [searchParam, setSearchParam] = useSearchParams();
 
   const handleSearch = (event) => {
     event.preventDefault();
     const queryData = searchParam.get("q");
-    console.log("Check");
+    // console.log("Check");
   };
   useEffect(() => {
     (async () => {
@@ -34,7 +30,7 @@ function SideBar() {
         setCategory(params.category)
         if (params.category === "products") {
           const response = await axios.get(
-            `http://localhost:5000/product/search`
+            `${process.env.REACT_APP_BASE_URL}/product/search`
           );
           // console.log("Response from /product ",response.data);
           setSearch(response.data);
@@ -42,7 +38,7 @@ function SideBar() {
           if (searchParam.get("q")) {
             //  console.log(response.data[0].product_description)
             const response = await axios.get(
-              `http://localhost:5000/product/search?Category=${params.category}&title=${searchParam.get(
+              `${process.env.REACT_APP_BASE_URL}/product/search?Category=${params.category}&title=${searchParam.get(
                 "q"
               )}`
             );
@@ -50,7 +46,7 @@ function SideBar() {
             setSearch(response.data);
           } else {
             const response = await axios.get(
-              `http://localhost:5000/product/search?Category=${params.category}`
+              `${process.env.REACT_APP_BASE_URL}/product/search?Category=${params.category}`
             );
             // console.log("Response from /product ",response.data);
             setSearch(response.data);
@@ -77,13 +73,13 @@ function SideBar() {
                 try {
                   if (params.category=="products"){
                   const response = await axios.get(
-                    `http://localhost:5000/product/search?title=${event.target.value}`
+                    `${process.env.REACT_APP_BASE_URL}/product/search?title=${event.target.value}`
                   );
                   setSearch(response.data);
 
                   }else{
                   const response = await axios.get(
-                    `http://localhost:5000/product/search?Categroy=${params.category}&title=${event.target.value}`
+                    `${process.env.REACT_APP_BASE_URL}/product/search?Categroy=${params.category}&title=${event.target.value}`
                   );
                   // console.log("Response from /product ",response.data);
                   setSearch(response.data);

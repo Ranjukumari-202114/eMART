@@ -20,7 +20,7 @@ function S3Card(props) {
     // console.log("this is the user id",user_id)
     // console.log("this is the data pass from app",data)
      
-    const res = axios.post("http://localhost:5000/cart/",{
+    const res = axios.post(`${process.env.REACT_APP_BASE_URL}/cart/`,{
       user_id : data._id,
       productid:props.id,
       quantity:1

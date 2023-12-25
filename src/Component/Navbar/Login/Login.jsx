@@ -27,7 +27,7 @@ function Login() {
       
     };
 
-    axios.post("http://localhost:5000/user/login", userData)
+    axios.post(`${process.env.REACT_APP_BASE_URL}/user/login`, userData)
     
     .then((response) => {
       const { jwt } = response.data;

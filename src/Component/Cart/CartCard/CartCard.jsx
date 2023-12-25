@@ -10,7 +10,7 @@ function CartCard(props) {
 
   const handleIncrement = () => {
     axios
-      .post("http://localhost:5000/cart/", {
+      .post(`${process.env.REACT_APP_BASE_URL}/cart/`, {
         user_id: props.user_id,
         product_id: props.product_id,
         quantity: 1,
@@ -25,7 +25,7 @@ function CartCard(props) {
 
   const handleDecrement = () => {
     axios
-      .post("http://localhost:5000/cart/", {
+      .post(`${process.env.REACT_APP_BASE_URL}/cart/`, {
         user_id: props.user_id,
         product_id: props.product_id,
         quantity: -1,
@@ -40,7 +40,7 @@ function CartCard(props) {
 
   const deleteProduct = () => {
     axios
-      .post("http://localhost:5000/cart/remove", {
+      .post(`${process.env.REACT_APP_BASE_URL}/cart/remove`, {
         user_id: props.user_id,
         product_id: props.product_id,
       })

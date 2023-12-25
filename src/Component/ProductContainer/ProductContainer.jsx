@@ -26,7 +26,7 @@ function ProductContainer() {
 
    useEffect(() =>{
       (async () => {
-       const response  =  await axios.get(`http://localhost:5000/product/${id}`)
+       const response  =  await axios.get(`${process.env.REACT_APP_BASE_URL}/product/${id}`)
       //  console.log("this is the responce data of the productContainer",response.data);
        setproduct(response.data[0]);
        console.log("this is the responce data of ",response.data[0]);

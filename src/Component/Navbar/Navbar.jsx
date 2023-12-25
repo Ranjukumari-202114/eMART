@@ -16,14 +16,7 @@ function Navbar() {
     setData(null)
   }
 
-  // useEffect(async()=>{
-  //   const res = await axios.get('http://localhost:5000/')
-  //   setAllData(res.data)
-  // })
-
-  // const handleFilter = (event)=>{
-  //   setRecords.filter()
-  // }
+  
 
   return (
     <div className="Navbar">

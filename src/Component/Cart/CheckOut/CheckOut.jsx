@@ -12,11 +12,12 @@ function CheckOut(props) {
       total_amount: 5000,
     };
 
-    axios.get("http://www.localhost:5000/api/getkey").then((response1) => {
+    axios.get(`${process.env.REACT_APP_BASE_URL}/api/getkey`)
+    .then((response1) => {
       console.log(response1.data);
 
       axios
-        .post("http://localhost:5000/payment/checkout", paymentData)
+        .post(`${process.env.REACT_APP_BASE_URL}/payment/checkout`, paymentData)
         .then((response) => {
           console.log(response.data);
 
@@ -27,7 +28,7 @@ function CheckOut(props) {
             name: "My name is Gupta",
             description: " RazorPay implementation",
             order_id: response.data.order.id,
-            callback_url: "http://localhost:5000/payment/paymentVerification",
+            callback_url: `${process.env.REACT_APP_BASE_URL}/payment/paymentVerification`,
             prefill: {
               name: "Ranju Kumari",
               email: "Ranjukumar@gmail.com",

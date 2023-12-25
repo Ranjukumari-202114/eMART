@@ -46,7 +46,7 @@ function App() {
     if(token){
       (async () => {
          try {
-        const response  =  await axios.post('http://localhost:5000/auth/verify',{token})
+        const response  =  await axios.post(`${process.env.REACT_APP_BASE_URL}/auth/verify`,{token})
         setData(response.data)
         // console.log("the data that we got in app",response.data )
       } catch (error) {

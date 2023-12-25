@@ -25,7 +25,7 @@ function SignUp() {
       user_password:Password,
     };
 
-    axios.post("http://localhost:5000/user/signup", userData)
+    axios.post(`${process.env.REACT_APP_BASE_URL}/user/signup`, userData)
     .then((response) => {
       
       if(response.status == 400)

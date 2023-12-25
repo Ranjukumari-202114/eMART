@@ -11,7 +11,7 @@ function ProductInformation(props) {
 
    const addToCart=()=>{
       axios
-      .post("http://localhost:5000/cart/", {
+      .post(`${process.env.REACT_APP_BASE_URL}/cart/`, {
            
            user_id: props.user_id,
            product_id: props.product_id,

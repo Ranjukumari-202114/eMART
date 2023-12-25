@@ -12,7 +12,7 @@ function Section3() {
 
   useEffect(() =>{
      (async () => {
-      const response  =  await axios.get('http://localhost:5000/product')
+      const response  =  await axios.get(`${process.env.REACT_APP_BASE_URL}/product`)
       // console.log("Response from /product ",response.data);
       setproduct(response.data);
     })()

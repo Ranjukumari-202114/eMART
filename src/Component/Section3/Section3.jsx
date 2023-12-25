@@ -15,6 +15,7 @@ function Section3() {
       const response  =  await axios.get(`${process.env.REACT_APP_BASE_URL}/product`)
       // console.log("Response from /product ",response.data);
       setproduct(response.data);
+      console.log("this is the data of the section 3",response.data)
     })()
   }, [])
 
@@ -28,7 +29,7 @@ function Section3() {
         </div>
         <div className='S3Card_card'>
         {
-          product.map((el)=>{
+          product?.map((el)=>{
           return <S3Card id={el._id} imageUrl={el.imageUrl} title={el.title} Category={el.Category} price={el.price} Rating={ el.Rating}/>
          })
         }
